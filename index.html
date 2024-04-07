@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title data-i18n="title">Temperature Converter</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 class="head" data-i18n="head">Temperature Converter</h1>
+        <h3 class="enter" data-i18n="enter">Enter Temperature</h3>
+
+
+        <div class="temperature">
+            <label>Celsius:</label>
+            <input onchange="computeTemp(event)" type="number" name="celsius" id="celsiusId"
+                placeholder="°C" class="input" />
+        </div>
+
+        <div class="temperature">
+            <label>Fahrenheit:</label>
+            <input onchange="computeTemp(event)" type="number" name="fahrenheit" id="fahrenheitId"
+                placeholder="°F" class="input" />
+        </div>
+
+        <div class="temperature">
+            <label>Kelvin:</label>
+            <input onchange="computeTemp(event)" type="number" name="kelvin" id="kelvinId"
+                placeholder="K" class="input" />
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>
+                <a href="#" onclick="changeLanguage('hu')">Hungarian</a>
+                <a href="#" onclick="changeLanguage('en')">English</a>
+                <a href="#" onclick="changeLanguage('de')">Germany</a>
+            </p>
+            <p data-i18n="author">Author: Zoltan Lukacs</p>
+            <p> E-mail: <a
+                    href="mailto:luki2004luki@gmail.com">luki2004luki@gmail.com</a></p>
+            <p >&copy; Copyright <span class="year">0000</span></p>
+
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
